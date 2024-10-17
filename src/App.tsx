@@ -8,6 +8,8 @@ import Photo from './pages/Photo';
 
 import { createGlobalStyle } from 'styled-components';
 import { ConfigProvider } from 'antd';
+import Video from './pages/Video';
+import ListVideo from './pages/ListVideo';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -31,7 +33,9 @@ function App() {
             <div className='site-layout-content' style={{ padding: 24, minHeight: 380 }}>
               <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/photo' element={<Photo />} />
+                  <Route path='/photo' element={<Photo />} />
+                  <Route path='/video' element={<Video />} />
+                  <Route path='/list-video' element={<ListVideo />} />
               </Routes>
           </div>
           </Content>
