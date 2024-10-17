@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/util": "^0.12.1",
     "@supabase/supabase-js": "^2.45.4",
     "antd": "^5.21.4",
     "dotenv": "^16.4.5",

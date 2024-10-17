@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
-import { HomeOutlined, PictureOutlined } from '@ant-design/icons';
+import { FormatPainterOutlined, HomeOutlined, PictureOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 
 
@@ -38,6 +38,16 @@ const Navbar: React.FC = () => {
                         key: '/photo',
                         icon: <PictureOutlined />,
                         label: <Link to='/photo'>Fotos</Link>
+                    },
+                    {
+                        key: '/video',
+                        icon: <VideoCameraOutlined />,
+                        label: <Link to='/video'>Videos</Link>
+                    },
+                    {
+                        key: '/list-video',
+                        icon: <FormatPainterOutlined />,
+                        label: <Link to='list-video'>Lista de videos</Link>
                     }
                 ]}
             >

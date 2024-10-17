@@ -37,7 +37,6 @@ const Home = () => {
             }
 
             if (data) {
-                console.log(data);
                 const photosWithUrls = await Promise.all(data.map(async (photo) => {
                     const { data: urlData } = supabase
                         .storage
